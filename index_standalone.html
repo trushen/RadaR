@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html>
+
+
+    <head>
+        <title>RadaR</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+	
+	<style type="text/css">
+
+		body{
+			margin: 0px 0px 0px 0px;
+			padding: 0px 0px 0px 0px;
+			background-color: black;
+		}
+
+		#wrapper { width: 1190px; margin: 0 auto; }
+
+
+		/* background styling */
+		#headerBlock{
+		width:100%;
+		height: 100px;
+		background-color: black;
+		margin: 0px 0px 0px 0px;
+		padding: 30px 0px 5px 30px;
+		}
+
+
+
+
+		#mainBlock{
+			width:1190px;
+			height: 500px;
+			background-color: rgb(200,201,202);
+			margin: 0px 0px 0px 0px;
+			padding: 10px 0px 0px 10px;
+		}
+
+		#footerBlock{
+			width:100%;
+			height: 20px;
+			background-color: black;
+			margin: 0px 0px 0px 0px;
+			padding: 0px 0px 0px 0px;
+			font-family: Verdana;
+			font-size: smaller;
+			color: white;
+		}
+
+		#headerBlockText{
+			font-family: Verdana;
+			font-size:large;
+			background-color: transparent;
+			color: white;
+			margin: 0px 0px 0px 0px;
+			padding: 10px 0px 10px 0px;
+			float: none;
+			height: 35px;
+			/* border-color: white;
+			border-style: solid;
+			border-width: 1px; */
+		}
+
+		#radarLogo{
+			width:50px;
+			margin: 0px 10px 5px 0px;
+			padding: 0px 0px 0px 0px;
+			float: left;
+
+				/* border-color: white;
+			border-style: solid;
+			border-width: 1px; */
+		}
+
+		#headerBlockSubheaderText{
+			font-family: Verdana;
+			font-size:small;
+			font-weight: 400;
+			background-color: transparent;
+			color: white;
+			margin:0px 0px 0px 0px;
+			padding: 0px 0px 0px 0px;
+		/* 
+			border-color: white;
+			border-style: solid;
+			border-width: 1px; */
+		}
+
+
+		/*================ kanban styling ================ */
+
+		#kanbanTable{
+			border: 10px transparent;
+		}
+
+		.kanbanTableColHeader{
+			font-family: Verdana;
+			font-weight: 600;
+			font-size: 80%;
+			line-height: 23px;
+			background-color: rgb(38,38,38);
+			color:white;
+			width: 200px;
+			text-align: center;
+			margin: 0px 0px 0px 0px;
+			padding: 0px 0px 0px 0px;
+			height:25px;  
+			border: 5px solid rgb(200,201,202);
+		}
+
+		.kanbanTableCell{
+			background-color: white;
+			width: 200px;
+			position: relative;
+			margin: 0px 0px 0px 0px;
+			padding: 0px 0px 5px 0px;
+			border: 5px solid rgb(200,201,202);
+		}
+
+		.kanbanTableRowHeader{
+			font-family: Verdana;
+			font-weight: 600;
+			font-size:60%; 
+			line-height: 100%;
+			position: relative;
+			background-color: rgb(51,63,80);
+			color:white;
+			text-align: center;
+			vertical-align: middle;
+			margin: 0px 0px 0px 0px;
+			padding: 5px 5px 5px 5px;
+			width: 110px;
+			border: 5px solid rgb(200,201,202);
+
+		}
+
+		.red{
+			list-style:none;
+			background-color: rgb(192,0,0);
+			border-style: none;
+			border-width: 3px;
+			border-radius: 3px;
+			float:left;
+			width: 56px;
+			height: 15px;
+
+			font-family: Verdana;
+			font-weight: 600;
+			font-size:10px;
+			line-height: 15px;
+			color:white;
+			word-wrap: none;
+			text-align: center;
+			padding: 2px;
+			margin: 2px;
+			cursor:pointer;
+			margin: 5px 0px 0px 5px;
+		}
+
+
+		.amber{
+			list-style:none;
+			background-color: rgb(255,192,0);
+			border-style: none;
+			border-width: 3px;
+			border-radius: 3px;
+			float:left;
+			width: 56px;
+			height: 15px;
+
+			font-family: Verdana;
+			font-weight: 600;
+			font-size:10px;
+			line-height: 15px;
+			color:black;
+			word-wrap: none;
+			text-align: center;
+			padding: 2px;
+			margin: 2px;
+			cursor:pointer;
+			margin: 5px 0px 0px 5px;
+		}
+
+
+		.green{
+			list-style:none;
+			background-color: rgb(0,176,80);
+			border-style: none;
+			border-width: 1px;
+			border-radius: 3px;
+			float:left;
+			width: 56px;
+			height: 15px;
+
+			font-family: Verdana;
+			font-weight: 600;
+			font-size:10px;
+			line-height: 15px;
+			color:black;
+			word-wrap: none;
+			text-align: center;
+			padding: 2px;
+			margin: 2px;
+			cursor:pointer;
+			margin: 5px 0px 0px 5px;
+		}
+
+
+	</style>
+	
+    <body>
+        <div id="wrapper">
+            <div id="headerBlock">
+                <img id="radarLogo" src="radarLogo_whiteOnBlack.svg"></img>
+                <h1 id="headerBlockText">RadaR</h1>
+                <p id="headerBlockSubheaderText">Deloitte Testing Services</p>
+            </div>
+
+            <div id="mainBlock">
+                <div id="kanbanBlock">
+
+                    <section id="kanbanTable" style="display: table;">
+                        <div id="kanbanTableHeaders" style="display: table-row;">
+                                <div style="display: table-cell;"></div>
+                                <div class="kanbanTableColHeader" style="display: table-cell;">New</div>
+                                <div class="kanbanTableColHeader" style="display: table-cell;">Under Investigation</div>
+                                <div class="kanbanTableColHeader" style="display: table-cell;">Fix in Progress</div>
+                                <div class="kanbanTableColHeader" style="display: table-cell;">Fixed</div>
+                                <div class="kanbanTableColHeader" style="display: table-cell;">Fix Blocked</div>
+                        </div>
+                        <div id="kanbanTableRow-1" style="display: table-row;">
+                                <div class="kanbanTableRowHeader" style="display: table-cell;">Authentication</div>
+                                <div class="kanbanTableCell" style="display: table-cell;">
+                                        <li class="red">ASI-9021</li>
+                                        <li class="amber">ASI-9020</li>
+                                        <li class="green">ASI-9019</li>
+                                </div>
+                                <div class="kanbanTableCell" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell" style="display: table-cell;"></div>
+                        </div>
+                        <div id="kanbanTableRow-2" style="display: table-row;">
+                                <div class="kanbanTableRowHeader" style="display: table-cell;">Correspondence</div>
+                                <div class="kanbanTableCell" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell" style="display: table-cell;"></div>
+                        </div>
+                        <div id="kanbanTableRow-3" style="display: table-row;">
+                                <div class="kanbanTableRowHeader" style="display: table-cell;">Fees & Charges</div>
+                                <div class="kanbanTableCell" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell" style="display: table-cell;">
+                                        <li class="red">ASI-9021</li>
+                                        <li class="amber">ASI-9020</li>
+                                        <li class="green">ASI-9019</li>
+                                        <li class="red">ASI-9021</li>
+                                        <li class="amber">ASI-9020</li>
+                                        <li class="green">ASI-9019</li>
+                                        <li class="red">ASI-9021</li>
+                                        <li class="amber">ASI-9020</li>
+                                        <li class="green">ASI-9019</li>
+                                        <li class="red">ASI-9021</li>
+                                        <li class="amber">ASI-9020</li>
+
+                                </div>
+                                <div class="kanbanTableCell" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell" style="display: table-cell;"></div>
+                        </div>
+                        <div id="kanbanTableRow-4" style="display: table-row;">
+                                <div class="kanbanTableRowHeader" style="display: table-cell;">Illustrations</div>
+                                <div class="kanbanTableCell" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell" style="display: table-cell;"></div>
+                        </div>
+
+                    </section>
+
+
+                </div>
+            </div>
+
+            <div id="footerBlock">
+                    
+            </div>
+        </div>
+
+		
+		
+
+    </body>
+
+</html>
+
+

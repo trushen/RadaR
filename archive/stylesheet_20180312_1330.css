@@ -1,0 +1,314 @@
+/*
+    Created on : 05-Mar-2018, 09:55:00
+    Author     : trupatel
+*/
+
+body{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background-color: black;
+}
+
+#wrapper { width: 1190px; margin: 0 auto; }
+
+
+/* background styling */
+#headerBlock{
+width:100%;
+height: 100px;
+background-color: black;
+margin: 0px 0px 0px 0px;
+padding: 30px 0px 5px 30px;
+}
+
+
+
+
+#mainBlock{
+    width:1190px;
+    height: 500px;
+    background-color: rgb(200,201,202);
+    margin: 0px 0px 0px 0px;
+    padding: 10px 0px 0px 10px;
+}
+
+#footerBlock{
+    width:100%;
+    height: 20px;
+    background-color: black;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-family: Verdana;
+    font-size: smaller;
+    color: white;
+}
+
+#headerBlockText{
+    font-family: Verdana;
+    font-size:large;
+    background-color: transparent;
+    color: white;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 0px 10px 0px;
+    float: none;
+    height: 35px;
+    /* border-color: white;
+    border-style: solid;
+    border-width: 1px; */
+}
+
+#radarLogo{
+    width:50px;
+    margin: 0px 10px 5px 0px;
+    padding: 0px 0px 0px 0px;
+    float: left;
+
+        /* border-color: white;
+    border-style: solid;
+    border-width: 1px; */
+}
+
+#headerBlockSubheaderText{
+    font-family: Verdana;
+    font-size:small;
+    font-weight: 400;
+    background-color: transparent;
+    color: white;
+    margin:0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+/* 
+    border-color: white;
+    border-style: solid;
+    border-width: 1px; */
+}
+
+
+/* kanban styling */
+
+
+
+.kanbanTableColHeader{
+    font-family: Verdana;
+    font-weight: 600;
+    font-size: 80%;
+    line-height: 23px;
+    background-color: rgb(38,38,38);
+    color:white;
+    width: 200px;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    height:25px;  
+}
+
+.kanbanTableCell{
+    background-color: white;
+    width: 200px;
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.kanbanTableRowHeader{
+    font-family: Verdana;
+    font-weight: 600;
+    font-size:60%; 
+    position: relative;
+    background-color: rgb(51,63,80);
+    color:white;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    width: 110px;
+
+}
+
+.red{
+    list-style:none;
+    background-color: rgb(192,0,0);
+    border-style: none;
+    border-width: 3px;
+    border-radius: 3px;
+    float:left;
+    width: 55px;
+    height: 15px;
+
+    font-family: Verdana;
+    font-weight: 600;
+    font-size:10px;
+    line-height: 15px;
+    color:white;
+    word-wrap: none;
+    text-align: center;
+    padding: 2px;
+    margin: 2px;
+    cursor:pointer;
+    margin: 5px 0px 0px 5px;
+}
+
+
+.amber{
+    list-style:none;
+    background-color: rgb(255,192,0);
+    border-style: none;
+    border-width: 3px;
+    border-radius: 3px;
+    float:left;
+    width: 55px;
+    height: 15px;
+
+    font-family: Verdana;
+    font-weight: 600;
+    font-size:10px;
+    line-height: 15px;
+    color:black;
+    word-wrap: none;
+    text-align: center;
+    padding: 2px;
+    margin: 2px;
+    cursor:pointer;
+    margin: 5px 0px 0px 5px;
+}
+
+
+.green{
+    list-style:none;
+    background-color: rgb(0,176,80);
+    border-style: none;
+    border-width: 1px;
+    border-radius: 3px;
+    float:left;
+    width: 55px;
+    height: 15px;
+
+    font-family: Verdana;
+    font-weight: 600;
+    font-size:10px;
+    line-height: 15px;
+    color:black;
+    word-wrap: none;
+    text-align: center;
+    padding: 2px;
+    margin: 2px;
+    cursor:pointer;
+    margin: 5px 0px 0px 5px;
+}
+
+
+
+
+
+/*========================OLD STYLING======================== */
+
+
+
+#col-1
+,#col-2
+,#col-3
+,#col-4
+,#col-5
+{
+    /* border-color: white;
+    border-style: solid;
+    border-width: 1px; */
+    width: 200px;
+    height: 500px;
+    position: relative;
+    float: left;
+    margin: 0px 0px 0px 10px;
+    padding: 5px 0px 0px 0px;
+}
+
+#colHeader-1
+,#colHeader-2
+,#colHeader-3
+,#colHeader-4
+,#colHeader-5
+,#colHeader-6
+{
+    font-family: Verdana;
+    font-weight: 600;
+    font-size: 80%;
+    line-height: 23px;
+    background-color: rgb(38,38,38);
+    color:white;
+    width: 200px;
+    text-align: center;
+    margin: 0px 0px 5px 0px;
+    padding: 0px 0px 0px 0px;
+    height:25px;  
+}
+#kanbanRowHeaders{
+    /* border-color: white;
+    border-style: solid;
+    border-width: 1px; */
+
+    width: 120px;
+    height: 460px;
+    position: relative;
+    float: left;
+    top: 30px;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
+}
+
+#rowHeader-1
+,#rowHeader-2
+,#rowHeader-3
+,#rowHeader-4
+
+{
+    font-family: Verdana;
+    font-weight: 600;
+    font-size:60%; 
+    position: relative;
+
+    background-color: rgb(51,63,80);
+    color:white;
+    text-align: center;
+
+    margin: 0px 0px 10px 0px;
+    padding: 10px 5px 5px 5px;
+
+    width: 110px;
+    height:50px;
+    /* display:table-cell; */
+}
+
+/* kanban blocks */
+#col-1-row-1
+,#col-1-row-2
+,#col-1-row-3
+,#col-1-row-4
+,#col-2-row-1
+,#col-2-row-2
+,#col-2-row-3
+,#col-2-row-4
+,#col-3-row-1
+,#col-3-row-2
+,#col-3-row-3
+,#col-3-row-4
+,#col-4-row-1
+,#col-4-row-2
+,#col-4-row-3
+,#col-4-row-4
+,#col-5-row-1
+,#col-5-row-2
+,#col-5-row-3
+,#col-5-row-4
+{
+    background-color: white;
+    width: 200px;
+    position: relative;
+    top: 5px;
+
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px 5px 2px;
+
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction:column; */
+    min-height: 60px;
+    flex-basis: 55px;
+}
+
