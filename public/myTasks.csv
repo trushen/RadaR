@@ -1,0 +1,19 @@
+TaskId,TaskStatus,TaskArea,TaskRAG
+ASI-0090,New,Correspondence,Red
+ASI-0201,Under Investigation,Illustrations,Red
+ASI-0312,Fixed,Correspondence,Red
+ASI-0423,Fixed,Illustrations,Red
+ASI-0534,Fixed,Correspondence,Red
+ASI-0645,Fixed,Illustrations,Red
+ASI-0756,New,Correspondence,Red
+ASI-0867,New,Authentication,Amber
+ASI-0978,New,Authentication,Amber
+ASI-1089,New,Authentication,Amber
+ASI-1200,New,Fees & Charges,Amber
+ASI-1311,Fixed,Fees & Charges,Amber
+ASI-1422,Fix in Progress,Fees & Charges,Amber
+ASI-1533,Fix in Progress,Illustrations,Green
+ASI-1644,Fix in Progress,Fees & Charges,Green
+ASI-1755,Fix Blocked,Fees & Charges,Green
+ASI-1866,Fix Blocked,Fees & Charges,Green
+ASI-1977,Fix Blocked,Fees & Charges,Green

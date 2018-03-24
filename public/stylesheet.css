@@ -1,0 +1,457 @@
+/*
+    Created on : 05-Mar-2018, 09:55:00
+    Author     : trupatel
+*/
+
+body{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background-color: black;
+}
+
+#wrapper { width: 1190px; margin: 0 auto; }
+
+
+/* background styling */
+#headerBlock{
+width:100%;
+height: 100px;
+background-color: black;
+margin: 0px 0px 0px 0px;
+padding: 30px 0px 5px 30px;
+
+
+}
+
+
+#headerBlockText{
+    font-family: Verdana;
+    font-size:large;
+    background-color: transparent;
+    color: white;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 0px 10px 0px;
+    float: left;
+    height: 35px;
+    width: 400px;
+
+    /* border-color: white;
+    border-style: solid;
+    border-width: 1px; */
+}
+
+#radarLogo{
+    width:50px;
+    margin: 0px 10px 5px 0px;
+    padding: 0px 0px 0px 0px;
+    float: left;
+
+        /* border-color: white;
+    border-style: solid;
+    border-width: 1px; */
+}
+
+
+#uploadLogo{
+    width:40px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 30px 0px 10px;
+    float: right;
+    cursor: pointer;
+
+    /* border-color: white;
+    border-style: solid;
+    border-width: 1px; */
+}
+
+
+#clearButton{
+    width:40px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 30px 0px 10px;
+    float: right;
+    cursor: pointer;
+
+    /* border-color: white;
+    border-style: solid;
+    border-width: 1px; */
+}
+
+
+
+#headerBlockSubheaderText{
+    font-family: Verdana;
+    font-size:small;
+    font-weight: 100;
+    background-color: transparent;
+    color: white;
+    margin:0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    width: 300px;
+    float: none;
+    /* border-color: white;
+    border-style: solid;
+    border-width: 1px; */
+}
+
+#uploadBlockText{
+    font-family: Verdana;
+    font-size:small;
+    font-weight:200;
+    background-color: transparent;
+    color: white;
+    margin: 0px 0px 0px 0px;
+    padding: 5px 0px 0px 0px;
+    float: right;
+    height: 35px;
+    width: 100px;
+    text-align: right;  
+    line-height: 17px
+    /* border-color: white;
+    border-style: solid;
+    border-width: 1px; */
+}
+
+
+
+#mainBlock{
+    width:1190px;
+    height: auto;
+    background-color: rgb(200,201,202);
+    margin: 0px 0px 0px 0px;
+    padding: 10px 0px 10px 10px;
+}
+
+#footerBlock{
+    width:100%;
+    height: 20px;
+    background-color: black;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-family: Verdana;
+    font-size: smaller;
+    color: white;
+}
+
+
+
+/*================ kanban styling ================ */
+
+
+
+.kanbanTableColHeader{
+    font-family: Verdana;
+    font-weight: 600;
+    font-size: 80%;
+    line-height: 23px;
+    background-color: rgb(38,38,38);
+    color:white;
+    width: 200px;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    height:25px;  
+    border: 5px solid rgb(200,201,202);
+}
+
+.kanbanTableCell
+, div[class*="row"]{
+    background-color: white;
+    width: 200px;
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 5px 0px;
+    border: 5px solid rgb(200,201,202);
+    vertical-align: top;
+}
+
+.kanbanTableRowHeader{
+    font-family: Verdana;
+    font-weight: 600;
+    font-size:60%; 
+    line-height: 100%;
+    position: relative;
+    background-color: rgb(51,63,80);
+    color:white;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0px 0px 0px 0px;
+    padding: 5px 5px 5px 5px;
+    width: 110px;
+    border: 5px solid rgb(200,201,202);
+
+}
+
+.red{
+    list-style:none;
+    background-color: rgb(192,0,0);
+    border-style: none;
+    border-width: 3px;
+    border-radius: 3px;
+    float:left;
+    width: 56px;
+    height: 15px;
+
+    font-family: Verdana;
+    font-weight: 600;
+    font-size:10px;
+    line-height: 15px;
+    color:white;
+    word-wrap: none;
+    text-align: center;
+    padding: 2px;
+    margin: 2px;
+    cursor:pointer;
+    margin: 5px 0px 0px 5px;
+}
+
+
+.amber{
+    list-style:none;
+    background-color: rgb(255,192,0);
+    border-style: none;
+    border-width: 3px;
+    border-radius: 3px;
+    float:left;
+    width: 56px;
+    height: 15px;
+
+    font-family: Verdana;
+    font-weight: 600;
+    font-size:10px;
+    line-height: 15px;
+    color:black;
+    word-wrap: none;
+    text-align: center;
+    padding: 2px;
+    margin: 2px;
+    cursor:pointer;
+    margin: 5px 0px 0px 5px;
+}
+
+
+.green{
+    list-style:none;
+    background-color: rgb(0,176,80);
+    border-style: none;
+    border-width: 1px;
+    border-radius: 3px;
+    float:left;
+    width: 56px;
+    height: 15px;
+
+    font-family: Verdana;
+    font-weight: 600;
+    font-size:10px;
+    line-height: 15px;
+    color:white;
+    word-wrap: none;
+    text-align: center;
+    padding: 2px;
+    margin: 2px;
+    cursor:pointer;
+    margin: 5px 0px 0px 5px;
+}
+
+
+/*================ modal styling ================ */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.3); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+#uploadModalContent {
+    
+    background-color:rgb(64,64,64);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 10px 10px 10px 10px;
+
+    width: 500px; /* Could be more or less, depending on screen size */
+    height: 90px;
+    color:black;
+
+    /* border:solid;
+    border-color: white;
+    border-width: 1px; */
+}
+
+#uploadModalHeader{
+    font-family: Verdana;
+    font-size:medium;
+    background-color: transparent;
+    color: white;
+    margin:10px 0px 10px 10px;
+    padding: 0px 0px 0px 0px;
+    width: 450px;
+    float: left;
+
+/*     border:solid;
+    border-color: white;
+    border-width: 1px; */
+}
+
+/* The Close Button */
+.closeButton {
+    color:rgb(64,64,64);
+    float: right;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 800;
+    background-color:inherit;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 15px;
+
+    /* border:solid;
+    border-color: white;
+    border-width: 1px; */
+}
+
+.closeButton:hover,
+.closeButton:focus
+
+{
+    /* color: white; */
+    background-color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+textarea{
+  background-color: white;
+}
+
+
+
+#uploadFileForm{
+    font-family: Verdana;
+    font-size:small;
+    font-weight: 600;
+    background-color: white;
+    color: white;
+    color:rgb(64,64,64);
+    float: left;
+    width: 350px;
+    height: 26px;
+    
+    border:solid;
+    border-color: white;
+    border-width: 1px;
+    
+    margin:5px 0px 0px 50px;
+    padding: 2px 2px 2px 10px;
+
+    
+}
+
+#loadButton{
+cursor: pointer;
+
+/* font-family: Verdana;
+font-size:small;
+font-weight: 800;
+background-color: white;
+color:rgb(64,64,64); */
+
+float: left;
+width: 40px;
+/* height: 22px;
+line-height: 22px; */
+    
+
+
+/* border:solid;
+border-color: white;
+border-width: 1px; */
+
+margin:0px 0px 10px 0px;
+padding: 0px 10px 0px 10px;
+}
+
+
+/* ====================task info modal styling==================== */
+
+
+/* Modal Content/Box */
+#taskModalContent {
+    
+    background-color:rgb(64,64,64);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 10px 20px 10px 20px;
+
+    width: 500px; /* Could be more or less, depending on screen size */
+    height:280px;
+    color:white;
+
+    /* border:solid;
+    border-color: white;
+    border-width: 1px; */
+}
+
+#taskModalHeader{
+    font-family: Verdana;
+    font-size:medium;
+    background-color: transparent;
+    color: white;
+    margin:10px 0px 10px 10px;
+    padding: 0px 0px 0px 0px;
+    width: 450px;
+    float: left;
+    height: 30px;
+
+/*     border:solid;
+    border-color: white;
+    border-width: 1px; */
+}
+
+.taskLabel{
+    font-family: Verdana;
+    font-size:smaller;
+    font-weight: 600;
+    background-color: transparent;
+    color: white;
+    margin:0px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
+    width: 25%;
+    min-height: 20px;
+    float: left;
+
+
+    /* border:solid;
+    border-color: white;
+    border-width: 1px; */
+}
+
+.taskText{
+    font-family: Verdana;
+    font-size:smaller;
+    font-weight: 300;
+    background-color:white;
+    color: rgb(64,64,64);
+    margin:0px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    width: 60%;
+    min-height: 20px;
+    height: auto;
+    float: right;
+}
+
+#taskSummaryLabel, #taskSummaryText{
+    height: 40px;
+    
+}

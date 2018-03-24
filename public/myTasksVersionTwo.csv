@@ -1,0 +1,59 @@
+TaskId,TaskName,TaskStatus,TaskSummary,TaskArea,TaskRAG,TaskAssignee,TaskOwner,TaskPriority
+ASI-0090,Panther,New,,Correspondence,Red,Person A,Person A,High
+ASI-0201,Cheetah,Under Investigation,,Illustrations,Red,Person M,Person A,High
+ASI-0312,Labrador,Fixed,,Correspondence,Red,Person L,Person A,High
+ASI-0423,Elephant,Fixed,,Illustrations,Red,Person C,Person C,High
+ASI-0534,Tiger,Fixed,,Correspondence,Red,Person O,Person C,High
+ASI-0645,Polar Bear,Fixed,,Illustrations,Red,Person E,Person C,High
+ASI-0756,Kitten,New,,Correspondence,Red,Person A,Person E,High
+ASI-0867,Puppies,New,,Authentication,Amber,Person M,Person E,High
+ASI-0978,Worm,New,,Authentication,Amber,Person L,Person E,High
+ASI-1089,Snake,New,,Authentication,Amber,Person C,Person L,High
+ASI-1200,Giraffe,New,,Fees & Charges,Amber,Person O,Person L,Medium
+ASI-1311,Lemur,Fixed,,Fees & Charges,Amber,Person E,Person L,Medium
+ASI-1422,Sloth,Fix in Progress,,Fees & Charges,Amber,Person A,Person M,Medium
+ASI-1533,Mole Rat,Fix in Progress,,Illustrations,Green,Person M,Person M,Medium
+ASI-1644,Mouse,Fix in Progress,,Fees & Charges,Green,Person L,Person M,Low
+ASI-1755,Hamster,Fix Blocked,,Fees & Charges,Green,Person C,Person O,Low
+ASI-1866,Pig,Fix Blocked,,Fees & Charges,Green,Person O,Person O,Low
+ASI-1977,Duck,Fix Blocked,,Fees & Charges,Green,Person E,Person O,Low
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,`,,,,,,,

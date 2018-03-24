@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+
+
+    <head>
+        <title>RadaR</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="papaparse.min.js"></script>
+    </head>
+
+    <body>             
+
+        <div id="wrapper">
+            <div id="headerBlock">
+                <img id="radarLogo" src="radarLogo_whiteOnBlack.svg"></img>
+                <h1 id="headerBlockText">RadaR</h1>
+                <img id="uploadLogo" src="uploadWhite.svg" onmouseover="hover(this);" onmouseout="unhover(this);"></img>
+                <h1 id="uploadBlockText">Upload Datasheet</h1>
+                <img id="clearButton" src="deleteWhite.svg" onclick="clearKanban();" onmouseover="hoverClear(this);" onmouseout="unhoverClear(this);"></img>
+                <h1 id="uploadBlockText">Clear Kanban</h1>
+                
+                <h1 id="headerBlockSubheaderText">
+                    Deloitte Testing Services
+                </h1>
+
+
+
+            </div>
+
+
+
+            <div id="mainBlock">
+                <div id="kanbanBlock">
+
+                    <section id="kanbanTable" style="display: table;">
+                        <div id="kanbanTableHeaders" style="display: table-row;">
+                                <div style="display: table-cell;"></div>
+                                <div class="kanbanTableColHeader" style="display: table-cell;">New</div>
+                                <div class="kanbanTableColHeader" style="display: table-cell;">Under Investigation</div>
+                                <div class="kanbanTableColHeader" style="display: table-cell;">Fix in Progress</div>
+                                <div class="kanbanTableColHeader" style="display: table-cell;">Fixed</div>
+                                <div class="kanbanTableColHeader" style="display: table-cell;">Fix Blocked</div>
+                        </div>
+                        <div id="kanbanTableRow-1" style="display: table-row;">
+                                <div class="kanbanTableRowHeader" style="display: table-cell;">Authentication</div>
+                                <div class="kanbanTableCell, row1" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell, row1" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell, row1" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell, row1" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell, row1" style="display: table-cell;"></div>
+                        </div>
+                        <div id="kanbanTableRow-2" style="display: table-row;">
+                                <div class="kanbanTableRowHeader" style="display: table-cell;">Correspondence</div>
+                                <div class="kanbanTableCell, row2" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell, row2" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell, row2" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell, row2" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell, row2" style="display: table-cell;"></div>
+                        </div>
+                        <div id="kanbanTableRow-3" style="display: table-row;">
+                                <div class="kanbanTableRowHeader" style="display: table-cell;">Fees & Charges</div>
+                                <div class="kanbanTableCell, row3" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell, row3" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell, row3" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell, row3" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell, row3" style="display: table-cell;"></div>
+                        </div>
+                        <div id="kanbanTableRow-4" style="display: table-row;">
+                                <div class="kanbanTableRowHeader" style="display: table-cell;">Illustrations</div>
+                                <div class="kanbanTableCell, row4" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell, row4" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell, row4" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell, row4" style="display: table-cell;"></div>
+                                <div class="kanbanTableCell, row4" style="display: table-cell;"></div>
+                        </div>
+
+                    </section>
+
+            <!-- Upload Modal -->
+            <div id="uploadModal" class="modal">
+                <div id="uploadModalContent">
+                    <h1 id="uploadModalHeader">
+                            Upload Datasheet
+                    </h1>
+                    <span class="closeButton">&times;</span>
+
+                    <input type="file" id="uploadFileForm" name="myTaskDatasheet">
+                    <img id="loadButton" src="uploadWhite.svg" onclick='loadFile();' onmouseover="hover(this);" onmouseout="unhover(this);"></img>
+                </div>
+
+            </div>
+
+            <!-- Task Info Modal -->
+            <div id="taskModal" class="modal">
+                <div id="taskModalContent">
+                    <h1 id="taskModalHeader">Unknown
+                    </h1>
+                    <span class="closeButton">&times;</span>
+                    <h2 id="taskIdLabel" class="taskLabel">ID</h2>
+                    <h2 id="taskIdText" class="taskText">Unknown</h2>
+                    <h2 id="taskSummaryLabel" class="taskLabel">Summary</h2>
+                    <h2 id="taskSummaryText" class="taskText">Unknown</h2>
+                    <h2 id="taskStatusLabel" class="taskLabel">Status</h2>
+                    <h2 id="taskStatusText" class="taskText">Unknown</h2>
+                    <h2 id="taskAssigneeLabel" class="taskLabel">Assigned to</h2>
+                    <h2 id="taskAssigneeText" class="taskText">Unknown</h2>
+                    <h2 id="taskOwnerLabel" class="taskLabel">Owner</h2>
+                    <h2 id="taskOwnerText" class="taskText">Unknown</h2>
+                    <h2 id="taskPriorityLabel" class="taskLabel">Priority</h2>
+                    <h2 id="taskPriorityText" class="taskText">Unknown</h2>
+                    <h2 id="taskAreaLabel" class="taskLabel">Area</h2>
+                    <h2 id="taskAreaText" class="taskText">Unknown</h2>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+                </div>
+            </div>
+
+            <div id="footerBlock">
+                
+            </div>
+        </div>
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+
+</html>
+
+
