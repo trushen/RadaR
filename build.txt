@@ -1,0 +1,19 @@
+updates in previous builds:
+    -added modal for datasheet upload
+    -upload button svg
+    -upload datasheet buttons (inc. hover)
+    -basic task description popup
+    -clear kanban method (inc. button)
+    -top align post-its when they are added
+    -expand main block when post-its are added
+    -clear kanban button svg
+
+updates in current build:
+
+backlog:
+    -->task description popup
+    -add extended task information in csv/parsing
+    -add task info to popup window
+
+    -->customisability
+    
